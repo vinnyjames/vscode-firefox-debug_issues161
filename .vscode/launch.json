@@ -1,0 +1,38 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "firefox local:8181",
+			"type": "firefox",
+			"request": "launch",
+			"file": "C:/workspace/ff-debug/161.html",
+			// "url": "http://${env:COMPUTERNAME}:8181/proteus",
+			// "webRoot": "${workspaceFolder}",
+			"profileDir": "C:/workspace/.firefox-vscode-debug-profile",
+			"keepProfileChanges": true,
+			// "log": {
+			// 	"fileName": "C:/workspace/vscode-debug.log",
+			// 	"fileLevel": {
+			// 		"default": "Debug"
+			// 	}
+			// },
+			"reloadOnChange": {
+				"watch": "${workspaceFolder}/**/*.((js)|(php)|(html)|(css))",
+				"ignore": "**/node_modules/**"
+			},
+			"pathMappings": [
+				{
+					"url": "http://vince-eagen:8181/proteus",
+					"path": "${workspaceFolder}"
+				},
+				{
+					"url": "http://${env:COMPUTERNAME}:8181/proteus",
+					"path": "${workspaceFolder}"
+				}
+			]
+		}
+	]
+}

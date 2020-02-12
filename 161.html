@@ -1,0 +1,12 @@
+<script>
+
+window.onload = function() {
+	var d = new Date();
+	var e = document.createElement("pre");
+	e.innerHTML = "" + d;
+	document.body.appendChild(e);
+	d.setDate(d.getDate() + 1);
+	e.append("\n" + d);
+}
+
+</script>
